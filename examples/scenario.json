@@ -1,0 +1,11 @@
+{
+  "datacenter_id": "DC-WEST-01",
+  "ambient_dry_bulb_c": 32.5,
+  "ambient_relative_humidity": 45,
+  "rack_clusters": [
+    {"cluster_id": "ROW-A", "it_load_kw": 250, "server_count": 80,
+     "containment_type": "COLD_AISLE", "design_airflow_m3_s": 20},
+    {"cluster_id": "ROW-B", "it_load_kw": 120, "server_count": 80,
+     "containment_type": "COLD_AISLE", "design_airflow_m3_s": 15}
+  ]
+}
