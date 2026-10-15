@@ -1,0 +1,12 @@
+services:
+  dashboard:
+    build: .
+    ports: ["127.0.0.1:8501:8501"]
+    volumes: ["telemetry:/opt/cooltwin/data"]
+  api:
+    build: .
+    command: uvicorn app.api:app --host 0.0.0.0 --port 8000
+    ports: ["127.0.0.1:8000:8000"]
+    volumes: ["telemetry:/opt/cooltwin/data"]
+volumes:
+  telemetry:
